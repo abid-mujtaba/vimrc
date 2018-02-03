@@ -1,0 +1,6 @@
+# Ignore folders
+
+autoload/
+bundle/
+bundle-archive/
+spell/
