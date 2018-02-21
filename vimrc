@@ -2,14 +2,34 @@
 " Author : Abid H. Mujtaba
 "
 set nocompatible
+filetype off			" Required by vundle
 
-" Use pathogen to easily modify the runtime path to include all plugins under the ~/.vim/bundle directory
-call pathogen#infect()
-call pathogen#helptags()
-"call pathogen#incubate()
+set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
+call vundle#begin()						" Initialize vundle
+
 
 set mouse=a
 syntax on
+
+
+" Let Vundle manage itself (required by Vundle)
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'itchyny/lightline.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+" nerdcommenter
+" tlib_vim
+" vim-addon-mw-utils
+" vim-markdown
+" vim-surround
+
+
+" Set shell to /bin/bash (since Vundle conflicts with fish shell)
+set shell=/bin/bash
+
 "
 "
 "Prevent vim from automatically inserting a new line after 80 characters.
