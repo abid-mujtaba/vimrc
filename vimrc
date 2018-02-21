@@ -25,6 +25,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " vim-addon-mw-utils
 " vim-markdown
 " vim-surround
+" ? badwolf
 
 
 " Set shell to /bin/bash (since Vundle conflicts with fish shell)
