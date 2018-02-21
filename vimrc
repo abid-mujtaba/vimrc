@@ -111,19 +111,18 @@ autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex syntax spell toplevel
 "
 "
-" Map shorter key combinations (following a colon) to larger tab controlling sequences in normal mode:
+" Map shorter key combinations (following a colon) to larger tab controlling sequences in insert and normal mode:
 "
-nmap <C-Tab> :tabnext<CR>
-nmap <C-S-Tab> :tabprev<CR>
+imap <C-Tab> :tabnext<CR>
+imap <C-S-Tab> :tabprev<CR>
+
+nmap tn :tabnext<CR>
+nmap tp :tabprev<CR>
 nmap tf :tabfirst<CR>
 nmap tl :tablast<CR>
 "
 "
 " Tab control while in Insert mode:
-"
-"imap <C-q> <Esc>:tabprev<CR>i
-imap <C-a> <Esc>:tabnext<CR>i
-"
 "
 " Same controls used in normal mode:
 "
@@ -233,7 +232,7 @@ set showmatch		" set show matching parenthesis
 set ignorecase		" ignore case when searching
 set smartcase		" ignore case if search pattern is all lowercase, case-sensitive otherwise
 set smarttab			" insert tabs on the start of a line according to shiftwidth, not tabstop
-set expandtab
+"set expandtab
 set hlsearch		" highlight search terms 
 set incsearch		" show search matches as you type
 set history=1000	" remember more commands and search history
@@ -285,9 +284,9 @@ let g:vim_markdown_math = 1
 "
 " Map Ctrl+N to issue the comma+c+space command used by NerdCommenter to
 " toggle line commenting and then move to the next line.
-nmap <C-C> <leader>c<Space>j
-vmap <C-C> <leader>c<Space>
-imap <C-C> <Esc><leader>c<Space>i
+nmap <C-K> <leader>c<Space>j
+vmap <C-K> <leader>c<Space>
+imap <C-K> <Esc><leader>c<Space>i
 
 
 " Map <leader>b (,b) to surround the current word (in normal mode) with \textbf{   } to make it
@@ -302,3 +301,8 @@ function! NormalTextBFWrap()
     " current character and then \textbf{ is inerted
     exe "normal bi\\textbf{"
 endfunction
+"
+"
+" YouCompleteMe settings to close function preview window on insertion
+let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_autoclose_preview_window_after_completion = 1
