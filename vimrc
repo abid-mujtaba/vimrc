@@ -31,26 +31,14 @@ call vundle#end()
 
 syntax on
 
-
 " Set shell to /bin/bash (since Vundle conflicts with fish shell)
 set shell=/bin/bash
 
-"
-"
-"Prevent vim from automatically inserting a new line after 80 characters.
-"
-"set textwidth=0
-"set formatoptions-=roc
-"
-"
+
 " Turn off modeline. This means vim won't read first and last 5 lines of files for internal configuration information. e.g. ~/.config/luakit/binds.lua on the last line
-"
 set nomodeline
-"
-"set spell
-"
+
 " Show various keys being pressed when issuing commands in command mode. This allows for visual cues when multiple keys need to be pressed to get a command to work.
-"
 set showcmd
 "
 " 
