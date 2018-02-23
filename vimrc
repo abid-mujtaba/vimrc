@@ -4,16 +4,16 @@
 set nocompatible
 filetype off			" Required by vundle
 
-" set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
-" call vundle#begin()						" Initialize vundle
+set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
+call vundle#begin()						" Initialize vundle
 
 
 set mouse=a
 
 
 " Let Vundle manage itself (required by Vundle)
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
 " Plugin 'tomtom/tcomment_vim'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'nathanaelkane/vim-indent-guides'
@@ -26,7 +26,7 @@ set mouse=a
 " vim-surround
 " ? badwolf
 
-" call vundle#end()
+call vundle#end()
 
 syntax on
 
@@ -136,7 +136,7 @@ imap <F5> <Esc>:w<CR>:!make<CR><CR>
 "
 "
 " Include mappings for Urdu editing
-source urdu.vim
+source ~/.vim/urdu.vim
 "
 "
 " Settings to make python completion work in vim
