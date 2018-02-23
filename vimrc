@@ -4,22 +4,21 @@
 set nocompatible
 filetype off			" Required by vundle
 
-set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
-call vundle#begin()						" Initialize vundle
+" set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
+" call vundle#begin()						" Initialize vundle
 
 
 set mouse=a
-syntax on
 
 
 " Let Vundle manage itself (required by Vundle)
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'itchyny/lightline.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'tomtom/tcomment_vim'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'itchyny/lightline.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
 " nerdcommenter
 " tlib_vim
 " vim-addon-mw-utils
@@ -27,7 +26,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " vim-surround
 " ? badwolf
 
-call vundle#end()
+" call vundle#end()
 
 syntax on
 
@@ -69,14 +68,8 @@ set foldmethod=indent	"fold based on indents
 set foldnestmax=10	"deepest fold is 10 levels
 set nofoldenable	"don't fold by default
 set foldlevel=1		"0 also works
-"
-"
-" Specify autospell to be off and numbering to be on for .c (C program) and .py (Python script) files.
-"
-"autocmd BufRead,BufNewFile  *.c  set number nospell
-"autocmd BufRead,BufNewFile  *.py  set number nospell
-"
-"
+
+
 " Specify autospell to be on only for text files and markdown files:
 "
 autocmd BufRead,BufNewFile  *.txt  set spell
@@ -93,26 +86,7 @@ autocmd BufRead,BufNewFile *.xhtml set filetype=htmldjango
 "
 "autocmd BufRead,BufNewFile *.sage,*.spyx,*.pyx set filetype=python
 autocmd BufRead,BufNewFile *.sage set filetype=python
-"
-"
-" Create a cython filetype:
-"
-"au! Syntax cython source /usr/local/share/vim/vim73/syntax/cython.vim
-"
-"
-" Setting cython style syntax highlighting for .spyx and .pyx files:
-"
-"autocmd BufRead,BufNewFile *.spyx,*.pyx set filetype=cython
-"
-"
-" Settings for vim-latex suite. Note: Some of the shortcuts (F5 and F7 in particular) are over-written by latex-suite and will need to be fixed by commenting out the relevant lines (referring to remapping F5 and F7) from ~/.vim/ftplugin/.... (can be found by grepping ~/.vim recursively for F5 and F7)
-"
-"filetype plugin on
-"set grepprg=grep\ -nH\ $*
-"filetype indent on
-"filetype on
-"let g:tex_flavor='latex'
-"set iskeyword+=:
+
 "
 " Set tab length to just 4 spaces, better for tex files:
 "
@@ -133,14 +107,6 @@ nmap tn :tabnext<CR>
 nmap tp :tabprev<CR>
 nmap tf :tabfirst<CR>
 nmap tl :tablast<CR>
-"
-"
-" Tab control while in Insert mode:
-"
-" Same controls used in normal mode:
-"
-"nmap <C-q> :tabprev<CR>
-nmap <C-a> :tabnext<CR>
 "
 "
 " Toggle numbering of lines with F9 (Note: toggline is done by inserting an exclamation point at the end of the setting) (Note: number? means the new state of the setting is displayed in the status bar)
