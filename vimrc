@@ -331,3 +331,7 @@ endfunction
 " YouCompleteMe settings to close function preview window on insertion
 let g:ycm_autoclose_preview_window_after_insertion = 1
 "let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Vim-GitGutter settings
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
