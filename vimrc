@@ -22,11 +22,11 @@ Plugin 'tomtom/tcomment_vim'
 " nerdcommenter
 " tlib_vim
 " vim-addon-mw-utils
-" vim-markdown
 " vim-surround
 " ? badwolf
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'lervag/vimtex'
+Plugin 'tpope/vim-markdown'
 
 call vundle#end()
 
