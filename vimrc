@@ -14,7 +14,7 @@ set mouse=a
 " Let Vundle manage itself (required by Vundle)
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'tomtom/tcomment_vim'
+Plugin 'tomtom/tcomment_vim'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'itchyny/lightline.vim'
@@ -25,6 +25,8 @@ Plugin 'airblade/vim-gitgutter'
 " vim-markdown
 " vim-surround
 " ? badwolf
+Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 
@@ -90,12 +92,12 @@ autocmd BufRead,BufNewFile *.sage set filetype=python
 "
 " Set tab length to just 4 spaces, better for tex files:
 "
-autocmd BufRead,BufNewFile *.tex set shiftwidth=4
+" autocmd BufRead,BufNewFile *.tex set shiftwidth=4
 "
 " Turn on spell check for tex files and specify spell checking for ALL environments:
 "
-autocmd FileType tex setlocal spell spelllang=en_us
-autocmd FileType tex syntax spell toplevel
+" autocmd FileType tex setlocal spell spelllang=en_us
+" autocmd FileType tex syntax spell toplevel
 "
 "
 " Map shorter key combinations (following a colon) to larger tab controlling sequences in insert and normal mode:
