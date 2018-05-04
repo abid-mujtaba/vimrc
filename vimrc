@@ -27,6 +27,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'lervag/vimtex'
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
