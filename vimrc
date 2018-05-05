@@ -14,17 +14,19 @@ set mouse=a
 " Let Vundle manage itself (required by Vundle)
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'tomtom/tcomment_vim'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'nathanaelkane/vim-indent-guides'
-" Plugin 'itchyny/lightline.vim'
-" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'itchyny/lightline.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-markdown'
 " nerdcommenter
 " tlib_vim
 " vim-addon-mw-utils
 " vim-markdown
 " vim-surround
 " ? badwolf
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 
@@ -90,12 +92,12 @@ autocmd BufRead,BufNewFile *.sage set filetype=python
 "
 " Set tab length to just 4 spaces, better for tex files:
 "
-autocmd BufRead,BufNewFile *.tex set shiftwidth=4
+" autocmd BufRead,BufNewFile *.tex set shiftwidth=4
 "
 " Turn on spell check for tex files and specify spell checking for ALL environments:
 "
-autocmd FileType tex setlocal spell spelllang=en_us
-autocmd FileType tex syntax spell toplevel
+" autocmd FileType tex setlocal spell spelllang=en_us
+" autocmd FileType tex syntax spell toplevel
 "
 "
 " Map shorter key combinations (following a colon) to larger tab controlling sequences in insert and normal mode:
@@ -239,3 +241,6 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " Vim-GitGutter settings
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+
+" Correct comment type used for LaTeX files
+call tcomment#DefineType('tex', '%% %s')
