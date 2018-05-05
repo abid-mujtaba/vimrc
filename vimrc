@@ -27,7 +27,6 @@ Plugin 'tpope/vim-markdown'
 " ? badwolf
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'lervag/vimtex'
-Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
