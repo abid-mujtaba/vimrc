@@ -25,7 +25,7 @@ Plugin 'tpope/vim-markdown'
 " vim-addon-mw-utils
 " vim-surround
 " ? badwolf
-Plugin 'JuliaEditorSupport/julia-vim'
+" Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'lervag/vimtex'
 Plugin 'tpope/vim-fugitive'
 
