@@ -15,7 +15,7 @@ set mouse=a
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -236,7 +236,7 @@ endfunction
 "
 "
 " YouCompleteMe settings to close function preview window on insertion
-let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_autoclose_preview_window_after_insertion = 1
 "let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Vim-GitGutter settings
@@ -244,4 +244,4 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
 " Correct comment type used for LaTeX files
-call tcomment#DefineType('tex', '%% %s')
+call tcomment#type#Define('tex', '%% %s')
