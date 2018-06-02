@@ -130,14 +130,6 @@ nmap <F3> :set spell! spell?<CR>
 imap <F3> <Esc>:set spell! spell?<CR>i
 "
 "
-" Run make using the F5 key
-" First save the file and then run 'make'
-nmap <F5> :w<CR>:!make<CR><CR>
-" In insert mode we first escape out of it, then save the file using ':w' and
-" then run make
-imap <F5> <Esc>:w<CR>:!make<CR><CR>
-"
-"
 " Include mappings for Urdu editing
 source ~/.vim/urdu.vim
 "
@@ -219,6 +211,10 @@ let g:vim_markdown_math = 1
 nmap <C-K> <leader>c<Space>j
 vmap <C-K> <leader>c<Space>
 imap <C-K> <Esc><leader>c<Space>i
+
+
+" Run make using <leader>m (where leader is ',')
+nmap <leader>m <Esc>:w<CR>:!make<CR><CR>
 
 
 " Map <leader>b (,b) to surround the current word (in normal mode) with \textbf{   } to make it
