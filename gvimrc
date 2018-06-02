@@ -4,6 +4,7 @@ set t_vb=       " Used to disable super-annoying visual bell which causes the sc
 " GUI Options for gvim (vim-gnome):
 set guioptions-=T
 colorscheme slate
+set guifont=Ubuntu\ Mono\ 12
 
 " Launch gvim maximized
 set lines=999 columns=999
