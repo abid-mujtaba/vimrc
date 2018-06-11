@@ -2,6 +2,8 @@
 " Author : Abid H. Mujtaba
 "
 set nocompatible
+syntax on
+set encoding=utf8
 filetype off			" Required by vundle
 
 set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
@@ -13,13 +15,38 @@ set mouse=a
 
 " Let Vundle manage itself (required by Vundle)
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
+
+" Some of the plugins have been suggested in: https://dev.to/allanmacgregor/vim-is-the-perfect-ide-e80
+
+" Utility
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'ctrlpvim/ctrlp.vim'	
+
+" Generic Programming Support
+Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'itchyny/lightline.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-syntastic/syntastic'
+
+" Markdown
 Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+
+" Theme / Interface
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'nathanaelkane/vim-indent-guides'
+
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'itchyny/lightline.vim'
 " nerdcommenter
 " tlib_vim
 " vim-addon-mw-utils
@@ -27,11 +54,10 @@ Plugin 'tpope/vim-markdown'
 " ? badwolf
 " Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'lervag/vimtex'
-Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
+filetype plugin indent on
 
-syntax on
 
 " Set shell to /bin/bash (since Vundle conflicts with fish shell)
 set shell=/bin/bash
@@ -149,7 +175,8 @@ set tabstop=4	" a tab is 4 spaces
 set backspace=indent,eol,start		" allow backspacing over eveything in insert mode
 set autoindent		" always set autoindenting on
 set copyindent		" copy the previous indentation on autoindenting
-"set number			" always show line numbers
+set number			" always show line numbers
+set ruler
 set shiftwidth=4	" number of spaces to use for autoindenting
 set shiftround		" use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch		" set show matching parenthesis
@@ -241,3 +268,8 @@ let g:gitgutter_eager = 0
 
 " Correct comment type used for LaTeX files
 call tcomment#type#Define('tex', '%% %s')
+
+
+" Make the cursor-line transparent while holding on to the highlighted line number
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+set cursorline		" highlight cursor line
