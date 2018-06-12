@@ -65,3 +65,27 @@ let mapleader=","
 " <leader>1 will copy the current line, paste it below, select it and then replace all characters with the '=' character. Useful for editing rst files
 nnoremap <leader>1 yypVr=
 
+
+" Map Ctrl+K to issue the comma+c+space command used by NerdCommenter to
+" toggle line commenting and then move to the next line.
+nmap <C-K> <leader>c<Space>j
+vmap <C-K> <leader>c<Space>
+imap <C-K> <Esc><leader>c<Space>i
+
+
+" Run make using <leader>m (where leader is ',')
+nmap <leader>m <Esc>:w<CR>:!make<CR><CR>
+
+
+" Map <leader>b (,b) to surround the current word (in normal mode) with \textbf{   } to make it
+" bold
+nmap <leader>b <Esc>:call NormalTextBFWrap()<CR>
+"
+" Define the function for wrapping visual selection with \textbf{   }
+function! NormalTextBFWrap()
+    " In normal mode 'e' jumps to end of word, 'a' enters insert mode after current character (last of word) and then '}' is inserted
+    exe "normal ea}"
+    " In normal 'b' jumps to start of word, 'i' enter insert mode before
+    " current character and then \textbf{ is inerted
+    exe "normal bi\\textbf{"
+endfunction
