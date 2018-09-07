@@ -3,6 +3,7 @@
 "
 set nocompatible
 syntax on
+set title
 filetype off			" Required by vundle
 
 set rtp+=~/.vim/bundle/Vundle.vim 		" Set the runtime path to include Vundle
