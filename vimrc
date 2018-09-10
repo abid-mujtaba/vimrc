@@ -20,7 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
-Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/deoplete.nvim'
 Plugin 'ctrlpvim/ctrlp.vim'	
 
 " Generic Programming Support
