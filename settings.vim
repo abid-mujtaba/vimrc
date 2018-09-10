@@ -49,3 +49,5 @@ set foldnestmax=10	"deepest fold is 10 levels
 set nofoldenable	"don't fold by default
 set foldlevel=1		"0 also works
 
+" Change search highlight color
+highlight Search cterm=None ctermfg=black ctermbg=lightblue
