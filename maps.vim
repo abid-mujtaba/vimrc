@@ -89,3 +89,8 @@ function! NormalTextBFWrap()
     " current character and then \textbf{ is inerted
     exe "normal bi\\textbf{"
 endfunction
+
+" Terminal maps:
+"
+" Use <Esc> to exit the terminal-mode
+:tnoremap <Esc> <C-\><C-n>
