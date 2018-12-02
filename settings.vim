@@ -51,3 +51,7 @@ set foldlevel=1		"0 also works
 
 " Change search highlight color
 highlight Search cterm=None ctermfg=black ctermbg=lightblue
+
+" Change bad spelling highlight color
+highlight clear SpellBad
+highlight SpellBad cterm=standout
