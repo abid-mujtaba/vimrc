@@ -55,3 +55,6 @@ highlight Search cterm=None ctermfg=black ctermbg=lightblue
 " Change bad spelling highlight color
 highlight clear SpellBad
 highlight SpellBad cterm=standout
+
+" Set default view type for netrw (file explorer) to 'tree'
+let g:netrw_liststyle = 3
