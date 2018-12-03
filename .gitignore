@@ -4,3 +4,4 @@ autoload/
 bundle/
 bundle-archive/
 spell/
+undodir/

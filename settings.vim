@@ -58,3 +58,7 @@ highlight SpellBad cterm=standout
 
 " Set default view type for netrw (file explorer) to 'tree'
 let g:netrw_liststyle = 3
+
+" Turn on persistent undo and set separate folder for storing undo files
+set undofile
+set undodir=~/.vim/undodir
