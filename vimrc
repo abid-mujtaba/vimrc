@@ -16,17 +16,25 @@ Plugin 'VundleVim/Vundle.vim'
 " Some of the plugins have been suggested in: https://dev.to/allanmacgregor/vim-is-the-perfect-ide-e80
 
 " Utility
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'majutsushi/tagbar'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
 Plugin 'Shougo/deoplete.nvim'
-Plugin 'ctrlpvim/ctrlp.vim'	
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'embear/vim-localvimrc'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+" Add relative jumps to jump-list so that one can jump back with Ctrl+O
+Plugin 'buztard/vim-rel-jump'
+" A more comprehensive buffer navigator
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " Generic Programming Support
-Plugin 'Townk/vim-autoclose'
+" Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
@@ -42,7 +50,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
 
-"Plugin 'Valloric/YouCompleteMe'
+" Colorschemes
+
+" Others
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 " nerdcommenter
 " tlib_vim
@@ -59,14 +70,16 @@ filetype plugin indent on		" Indenting intelligence is enabled based on the synt
 
 
 " Add settings from other files
-source ~/.vim/urdu.vim		" Include mappings for Urdu editing
+" source ~/.vim/urdu.vim		" Include mappings for Urdu editing
 source ~/.vim/cmds.vim		" autocmds
 source ~/.vim/maps.vim		" Custom key mappings
 source ~/.vim/settings.vim	" General Settings
-source ~/.vim/pluginsettings.vim 	" Settings for individual plugins
+" source ~/.vim/pluginsettings.vim 	" Settings for individual plugins
 
 
 
 " Make the cursor-line transparent while holding on to the highlighted line number
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline		" highlight cursor line
+
+set background=dark
