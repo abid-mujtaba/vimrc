@@ -16,6 +16,7 @@ set backspace=indent,eol,start		" allow backspacing over eveything in insert mod
 set autoindent		" always set autoindenting on
 set copyindent		" copy the previous indentation on autoindenting
 set number			" always show line numbers
+set relativenumber	" show relative line numbers (when used with 'set number' switches to hybrid mode which shows the absolute line number (only) on the current line)
 set ruler
 set laststatus=2	" Always display the status line
 set shiftwidth=4	" number of spaces to use for autoindenting
