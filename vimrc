@@ -23,7 +23,8 @@ Plugin 'junegunn/fzf'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'embear/vim-localvimrc'
+" Loads a local '.local.vimrc' for per-project settings
+Plugin 'thinca/vim-localrc'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 " Add relative jumps to jump-list so that one can jump back with Ctrl+O
