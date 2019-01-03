@@ -20,8 +20,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'majutsushi/tagbar'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'embear/vim-localvimrc'
 Plugin 'tpope/vim-repeat'
@@ -58,10 +58,10 @@ Plugin 'itchyny/lightline.vim'
 " nerdcommenter
 " tlib_vim
 " vim-addon-mw-utils
-" vim-surround
 " ? badwolf
+"
 " Plugin 'JuliaEditorSupport/julia-vim'
-Plugin 'lervag/vimtex'
+" Plugin 'lervag/vimtex'
 
 call vundle#end()
 
