@@ -34,11 +34,11 @@ Plugin 'jeetsukumaran/vim-buffergator'
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
-" Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
+" Plugin 'jtratner/vim-flavored-markdown'
 
 " Git
 Plugin 'tpope/vim-fugitive'

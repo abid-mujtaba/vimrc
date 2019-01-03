@@ -3,6 +3,13 @@
 inoremap jk <Esc>
 
 
+" Use Ctrl+{h,j,k,l} to move between panes
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+
 " Make the space key in normal mode insert a single letter. Simply navigate to the position you want to insert (not replace) a single character and then type space followed by the letter you want to insert.
 "
 " Explanation : Pressing space triggers the sequece 'i_<esc>r' which means first i is pressed to enter insert mode, then a single underscore character is entered as a visible place-holder. Then <esc> is pressed to exit insert mode and then 'r' is pressed in normal mode which allows one to over-write the single underscore character with the next key that is pressed. Simple and elegant.
