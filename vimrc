@@ -38,7 +38,9 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-syntastic/syntastic'
 
 " Markdown
-Plugin 'tpope/vim-markdown'
+Plugin 'godlygeek/tabular'				" Required by the latter
+Plugin 'plasticboy/vim-markdown'
+" Plugin 'tpope/vim-markdown'
 " Plugin 'jtratner/vim-flavored-markdown'
 
 " Git
