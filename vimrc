@@ -31,6 +31,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'buztard/vim-rel-jump'
 " A more comprehensive buffer navigator
 Plugin 'jeetsukumaran/vim-buffergator'
+" Enables one-character in-line jumps using 's' (as an extension of 
+" one-character jumps using 'f')
 
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'
@@ -41,6 +43,10 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
 " Plugin 'jtratner/vim-flavored-markdown'
+
+" Python
+" Autocompletion and static analysis. Requires 'pip install jedi'
+Plugin 'davidhalter/jedi-vim'
 
 " Git
 Plugin 'tpope/vim-fugitive'
