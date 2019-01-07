@@ -46,10 +46,6 @@ nmap <F3> :set spell! spell?<CR>
 imap <F3> <Esc>:set spell! spell?<CR>i
 
 
-" In normal mode we will use ; like : so we can avoid hitting the Shift key repeatedly
-nnoremap ; :
-
-
 " The following allows j and k to move up and down within wrapped lines
 nnoremap j gj
 nnoremap k gk
