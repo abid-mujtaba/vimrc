@@ -2,6 +2,9 @@
 "
 inoremap jk <Esc>
 
+" Make single <leader> the default prefix for the 'easymotion' plugin
+map <Leader> <Plug>(easymotion-prefix)
+
 
 " Use Ctrl+{h,j,k,l} to move between panes
 nnoremap <C-j> <C-w>j
