@@ -69,13 +69,6 @@ let mapleader=","
 nnoremap <leader>1 yypVr=
 
 
-" Map Ctrl+K to issue the comma+c+space command used by NerdCommenter to
-" toggle line commenting and then move to the next line.
-nmap <C-K> <leader>c<Space>j
-vmap <C-K> <leader>c<Space>
-imap <C-K> <Esc><leader>c<Space>i
-
-
 " Run make using <leader>m (where leader is ',')
 nmap <leader>m <Esc>:w<CR>:!make<CR><CR>
 
