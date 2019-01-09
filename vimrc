@@ -21,7 +21,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
 " Plugin 'Shougo/deoplete.nvim'
-" Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tmhedberg/SimpylFold'
 " Loads a local '.local.vimrc' for per-project settings
 Plugin 'thinca/vim-localrc'
@@ -29,24 +28,17 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 " Add relative jumps to jump-list so that one can jump back with Ctrl+O
 Plugin 'buztard/vim-rel-jump'
-" A more comprehensive buffer navigator
-Plugin 'jeetsukumaran/vim-buffergator'
-" Enables one-character in-line jumps using 's' (as an extension of 
-" one-character jumps using 'f')
+Plugin 'easymotion/vim-easymotion'
 
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
 " Plugin 'jtratner/vim-flavored-markdown'
-
-" Python
-" Autocompletion and static analysis. Requires 'pip install jedi'
-Plugin 'davidhalter/jedi-vim'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -80,8 +72,8 @@ filetype plugin indent on		" Indenting intelligence is enabled based on the synt
 " Add settings from other files
 " source ~/.vim/urdu.vim		" Include mappings for Urdu editing
 source ~/.vim/cmds.vim		" autocmds
-source ~/.vim/maps.vim		" Custom key mappings
 source ~/.vim/settings.vim	" General Settings
+source ~/.vim/maps.vim		" Custom key mappings
 " source ~/.vim/pluginsettings.vim 	" Settings for individual plugins
 
 
