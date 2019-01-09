@@ -75,7 +75,7 @@ nmap <leader>m <Esc>:w<CR>:!make<CR><CR>
 
 " Map <leader>b (,b) to surround the current word (in normal mode) with \textbf{   } to make it
 " bold
-nmap <leader>b <Esc>:call NormalTextBFWrap()<CR>
+" nmap <leader>b <Esc>:call NormalTextBFWrap()<CR>
 "
 " Define the function for wrapping visual selection with \textbf{   }
 function! NormalTextBFWrap()
@@ -90,3 +90,8 @@ endfunction
 "
 " Use <Esc> to exit the terminal-mode
 :tnoremap <Esc> <C-\><C-n>
+
+" fzf maps:
+"
+nmap <leader><leader>e :Files<CR>
+nmap <leader><leader>b :Buffers<CR>
