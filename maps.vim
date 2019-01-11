@@ -2,9 +2,6 @@
 "
 inoremap jk <Esc>
 
-" Make single <leader> the default prefix for the 'easymotion' plugin
-map <Leader> <Plug>(easymotion-prefix)
-
 
 " Use Ctrl+{h,j,k,l} to move between panes
 nnoremap <C-j> <C-w>j
@@ -94,7 +91,20 @@ endfunction
 " Use <Esc> to exit the terminal-mode
 :tnoremap <Esc> <C-\><C-n>
 
+
+" easymotion maps:
+"
+" Make single <leader> the default prefix for the 'easymotion' plugin.
+" This map should be near the bottom otherwise it will get over-ridden
+map <Leader> <Plug>(easymotion-prefix)
+
+
 " fzf maps:
 "
 nmap <leader><leader>e :Files<CR>
 nmap <leader><leader>b :Buffers<CR>
+
+
+" In INSERT mode use semi-colon for auto-complete and <leader>; for the normal ;
+inoremap <leader>; ;
+imap ; <C-N>
