@@ -63,3 +63,6 @@ let g:netrw_liststyle = 3
 " Turn on persistent undo and set separate folder for storing undo files
 set undofile
 set undodir=~/.vim/undodir
+
+" Set tabstop for comdb2 schema files
+autocmd BufRead,BufNewFile *.csc2 set tabstop=8
