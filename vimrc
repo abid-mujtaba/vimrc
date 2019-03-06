@@ -34,6 +34,7 @@ Plugin 'easymotion/vim-easymotion'
 " Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
 " Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
@@ -53,7 +54,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " Colorschemes
 
 " Others
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 " nerdcommenter
 " tlib_vim
@@ -74,7 +75,7 @@ filetype plugin indent on		" Indenting intelligence is enabled based on the synt
 source ~/.vim/cmds.vim		" autocmds
 source ~/.vim/settings.vim	" General Settings
 source ~/.vim/maps.vim		" Custom key mappings
-" source ~/.vim/pluginsettings.vim 	" Settings for individual plugins
+source ~/.vim/pluginsettings.vim 	" Settings for individual plugins
 
 
 
