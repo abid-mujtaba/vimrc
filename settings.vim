@@ -69,3 +69,20 @@ autocmd BufRead,BufNewFile *.csc2 set tabstop=8
 
 " Set python settings for markdown files (which usually contain python code)
 autocmd BufRead,BufNewFile *.md set tabstop=4 shiftwidth=4 expandtab
+
+" Make python files pep-8 compliant
+au BufNewFile,BufRead *.py
+	\ set tabstop=4 |
+	\ set softtabstop=4 |
+	\ set shiftwidth=4 |
+	\ set textwidth=79 |
+	\ set expandtab |
+	\ set autoindent |
+	\ set fileformat=unix
+
+" Flag unnecessary whitespace
+" highlight BadWhitespace ctermbg=red guibg=darkred
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Enable maximal highlighting for python
+let python_highlight_all=1
