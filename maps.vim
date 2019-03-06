@@ -104,7 +104,10 @@ map <Leader> <Plug>(easymotion-prefix)
 nmap <leader><leader>e :Files<CR>
 nmap <leader><leader>b :Buffers<CR>
 
+" ALE maps:
+"
+nmap <leader><leader>f :ALEFix<CR>
 
-" In INSERT mode use semi-colon for auto-complete and <leader>; for the normal ;
-inoremap <leader>; ;
-imap ; <C-N>
+
+" In INSERT mode use <leader>+semi-colon for auto-complete
+imap <leader>; <C-N>
