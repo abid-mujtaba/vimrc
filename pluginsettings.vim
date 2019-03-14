@@ -16,7 +16,7 @@ let g:ycm_server_python_interpreter = '/opt/bb/bin/python3.7'
 
 " Explicitly set the python linters and fixers
 let b:ale_linters = {'python': ['pylint']}
-let b:ale_fixers = {'python': ['black']}
+let g:ale_fixers = {'python': ['black']}
 
 let g:ale_lint_on_text_changed = 'never' 	" Only lint on file save
 let g:alte_lint_on_enter = 0	" Don't lint on file open
