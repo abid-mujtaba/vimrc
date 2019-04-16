@@ -70,12 +70,12 @@ autocmd BufRead,BufNewFile *.csc2 set tabstop=8
 " Set python settings for markdown files (which usually contain python code)
 autocmd BufRead,BufNewFile *.md set tabstop=4 shiftwidth=4 expandtab
 
-" Make python files pep-8 compliant
+" Make python files pep-8 (and black) compliant
 au BufNewFile,BufRead *.py
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
-	\ set textwidth=79 |
+	\ set textwidth=88 |
 	\ set expandtab |
 	\ set autoindent |
 	\ set fileformat=unix
