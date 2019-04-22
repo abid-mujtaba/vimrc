@@ -101,7 +101,8 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " fzf maps:
 "
-nmap <leader><leader>e :Files<CR>
+" GFiles will only search through files NOT ignored by git
+nmap <leader><leader>e :GFiles<CR>
 nmap <leader><leader>b :Buffers<CR>
 
 " ALE maps:
