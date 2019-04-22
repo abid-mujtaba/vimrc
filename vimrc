@@ -36,6 +36,9 @@ Plugin 'tomtom/tcomment_vim'
 " Plugin 'vim-syntastic/syntastic'
 Plugin 'w0rp/ale'
 
+" Specific Programming Support
+Plugin 'vim-scripts/python.vim'
+
 " Markdown
 Plugin 'tpope/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
