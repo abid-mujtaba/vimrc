@@ -104,6 +104,20 @@ map <Leader> <Plug>(easymotion-prefix)
 " GFiles will only search through files NOT ignored by git
 nmap <leader><leader>e :GFiles<CR>
 nmap <leader><leader>b :Buffers<CR>
+nmap <leader><leader>h :History<CR>
+nmap <leader><leader>t :BTags<CR>
+" BLines only searches in current folders
+nmap <leader><leader>l :BLines<CR>
+" Lines searches in all loaded buffers
+nmap <leader><leader>L :Lines<CR>
+" Fuzzy search for text in the entire project
+nmap <leader><leader>a :Ag<CR>
+" Fuzzy search command, search history
+nmap <leader><leader>: :History:<CR>
+nmap <leader><leader>/ :History/<CR>
+" Fuzzy search maps
+nmap <leader><leader>M :Maps<CR>
+
 
 " ALE maps:
 "
