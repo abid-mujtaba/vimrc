@@ -103,6 +103,7 @@ map <Leader> <Plug>(easymotion-prefix)
 "
 " GFiles will only search through files NOT ignored by git
 nmap <leader><leader>e :GFiles<CR>
+nmap <leader><leader>E :Files<CR>
 nmap <leader><leader>b :Buffers<CR>
 nmap <leader><leader>h :History<CR>
 nmap <leader><leader>t :BTags<CR>
