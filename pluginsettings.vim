@@ -20,6 +20,10 @@ let g:ale_fixers = {'python': ['black']}
 
 let g:ale_lint_on_text_changed = 'never' 	" Only lint on file save
 let g:alte_lint_on_enter = 0	" Don't lint on file open
+
+" let g:ale_sign_error = '❌'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠️'
 """"""""""""""
 
 """""""""""""""""""

@@ -29,6 +29,7 @@ Plugin 'tpope/vim-surround'
 " Add relative jumps to jump-list so that one can jump back with Ctrl+O
 Plugin 'buztard/vim-rel-jump'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'

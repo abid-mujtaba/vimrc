@@ -68,7 +68,7 @@ set undodir=~/.vim/undodir
 autocmd BufRead,BufNewFile *.csc2 set tabstop=8
 
 " Set python settings for markdown files (which usually contain python code)
-autocmd BufRead,BufNewFile *.md set tabstop=4 shiftwidth=4 expandtab
+autocmd BufRead,BufNewFile *.md set tabstop=4 shiftwidth=4 expandtab textwidth=88
 
 " Make python files pep-8 (and black) compliant
 au BufNewFile,BufRead *.py
