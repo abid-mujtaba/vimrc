@@ -26,7 +26,7 @@ set ignorecase		" ignore case when searching
 set smartcase		" ignore case if search pattern is all lowercase, case-sensitive otherwise
 " set smarttab		" insert tabs on the start of a line according to shiftwidth, not tabstop
 " set expandtab		" Expand tabs in to spaces
-set hlsearch		" highlight search terms 
+set hlsearch		" highlight search terms
 set incsearch		" show search matches as you type
 set history=1000	" remember more commands and search history
 set undolevels=1000	" use more levels of undo
@@ -42,6 +42,7 @@ set nomodeline		" Turn off modeline. This means vim won't read first and last 5 
 set showcmd		" Show various keys being pressed when issuing commands in command mode. This allows for visual cues when multiple keys need to be pressed to get a command to work.
 set scrolloff=2			" Keep 2 lines above or below your current position (if possible) to maintain context while scrolling. (Scroll Offset)
 set wildmode=longest,list		" Standard tab completion behaviour for filenames inside vim
+set pastetoggle=<F2>		" Use <F2> to toggle paste mode on and off
 "
 " Enable vim-folding i.e. cold folding.
 "
