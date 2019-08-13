@@ -26,9 +26,12 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'thinca/vim-localrc'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+" Make word-boundary motion aware of camelCase and snake_case
+Plugin 'chaoren/vim-wordmotion'
 " Add relative jumps to jump-list so that one can jump back with Ctrl+O
 Plugin 'buztard/vim-rel-jump'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'aykamko/vim-easymotion-segments'
 Plugin 'bronson/vim-trailing-whitespace'
 
 " Generic Programming Support
@@ -56,6 +59,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Colorschemes
+" Plugin 'morhetz/gruvbox'
 
 " Others
 Plugin 'Valloric/YouCompleteMe'
