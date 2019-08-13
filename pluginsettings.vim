@@ -21,9 +21,13 @@ let g:ale_fixers = {'python': ['black']}
 let g:ale_lint_on_text_changed = 'never' 	" Only lint on file save
 let g:alte_lint_on_enter = 0	" Don't lint on file open
 
-" let g:ale_sign_error = '❌'
 let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_warning = '⚠'
+
+" Turn off background highlighting for ALE warnings and errors
+" The actual value passed in to guibg doesn't seem to have any impact
+highlight ALEWarningSign guibg=#000000
+highlight ALEErrorSign guibg=#000000
 """"""""""""""
 
 """""""""""""""""""
