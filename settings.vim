@@ -85,7 +85,13 @@ au BufNewFile,BufRead *.py
 	\ set textwidth=88 |
 	\ set expandtab |
 	\ set autoindent |
-	\ set fileformat=unix
+	\ set fileformat=unix |
+	\ set foldmethod=indent
+
+" Configure tab = 4 spaces for Jenkinsfile
+au BufNewFile,BufRead Jenkinsfile
+	\ set tabstop=4 |
+	\ set expandtab
 
 " Flag unnecessary whitespace
 " highlight BadWhitespace ctermbg=red guibg=darkred
