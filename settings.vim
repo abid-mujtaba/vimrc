@@ -70,8 +70,9 @@ let g:netrw_liststyle = 3
 set undofile
 set undodir=~/.vim/undodir
 
-" Set tabstop for comdb2 schema files
+" Set tabstop for comdb2 schema files and Makefiles
 autocmd BufRead,BufNewFile *.csc2 set tabstop=8
+autocmd BufRead,BufNewFile Makefile,*.mk set tabstop=8 textwidth=88
 
 " Set python settings for markdown files (which usually contain python code)
 autocmd BufRead,BufNewFile *.md set tabstop=4 shiftwidth=4 expandtab textwidth=88
