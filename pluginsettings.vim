@@ -19,15 +19,16 @@ let b:ale_linters = {'python': ['pylint']}
 let g:ale_fixers = {'python': ['black']}
 
 let g:ale_lint_on_text_changed = 'never' 	" Only lint on file save
-let g:alte_lint_on_enter = 0	" Don't lint on file open
+let g:ale_lint_on_enter = 0	" Don't lint on file open
 
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
+" The ale_sign-s use a non-breaking space (unicode: U+00A0, entered using
+" Ctrl+v x a 0)
+let g:ale_sign_error = ' ✘'
+let g:ale_sign_warning = ' !'
 
 " Turn off background highlighting for ALE warnings and errors
-" The actual value passed in to guibg doesn't seem to have any impact
-highlight ALEWarningSign guibg=#000000
-highlight ALEErrorSign guibg=#000000
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 """"""""""""""
 
 """""""""""""""""""
