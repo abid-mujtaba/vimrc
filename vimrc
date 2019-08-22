@@ -1,6 +1,9 @@
 "
 " Author : Abid H. Mujtaba
 "
+set encoding=utf-8
+scriptencoding=utf-8
+
 set nocompatible
 syntax on
 set title
