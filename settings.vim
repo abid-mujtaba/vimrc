@@ -51,10 +51,9 @@ set foldnestmax=10	"deepest fold is 10 levels
 set nofoldenable	"don't fold by default
 set foldlevel=1		"0 also works
 
+
 " Set colorscheme
-" let g:gruvbox_italic=1
-" colorscheme gruvbox
-" set background=dark
+colorscheme kuroi
 
 " Change search highlight color
 highlight Search cterm=None ctermfg=black ctermbg=lightyellow
