@@ -24,7 +24,7 @@ let g:ale_lint_on_enter = 0	" Don't lint on file open
 " The ale_sign-s use a non-breaking space (unicode: U+00A0, entered using
 " Ctrl+v x a 0)
 let g:ale_sign_error = ' ✘'
-let g:ale_sign_warning = ' !'
+let g:ale_sign_warning = ' •'
 
 " Turn off background highlighting for ALE warnings and errors
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
