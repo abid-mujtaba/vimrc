@@ -62,7 +62,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Colorschemes
-Plugin 'aonemd/kuroi.vim'
+Plugin 'abid-mujtaba/kuroi.vim'
 
 " Others
 Plugin 'Valloric/YouCompleteMe'

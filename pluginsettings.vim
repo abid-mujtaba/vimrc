@@ -26,9 +26,7 @@ let g:ale_lint_on_enter = 0	" Don't lint on file open
 let g:ale_sign_error = ' ✘'
 let g:ale_sign_warning = ' •'
 
-" Turn off background highlighting for ALE warnings and errors
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+" Note: The highlighting for ALE signs is defined in the modified kuroi colorscheme
 """"""""""""""
 
 """""""""""""""""""
@@ -79,10 +77,10 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 "
 " " Vim-Airline Configuration
 " let g:airline#extensions#tabline#enabled = 1
-" let g:airline_powerline_fonts = 1 
+" let g:airline_powerline_fonts = 1
 " let g:airline_theme='hybrid'
 " let g:hybrid_custom_term_colors = 1
-" let g:hybrid_reduced_contrast = 1 
+" let g:hybrid_reduced_contrast = 1
 "
 "
 " " Syntastic Configuration
@@ -200,7 +198,7 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 " omap <leader><tab> <plug>(fzf-maps-o)
 "
 " " Shortcuts
-" nnoremap <Leader>o :Files<CR> 
+" nnoremap <Leader>o :Files<CR>
 " nnoremap <Leader>O :CtrlP<CR>
 " nnoremap <Leader>w :w<CR>
 "
