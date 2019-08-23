@@ -36,6 +36,7 @@ Plugin 'buztard/vim-rel-jump'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'aykamko/vim-easymotion-segments'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'haya14busa/is.vim'
 
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'
