@@ -8,7 +8,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Use python3.7 to run the ycmd server
-let g:ycm_server_python_interpreter = '/opt/bb/bin/python3.7'
+" let g:ycm_server_python_interpreter = '/opt/bb/bin/python3.7'
 """"""""""""""""""""""""
 
 """"""""""""""
