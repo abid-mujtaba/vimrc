@@ -29,6 +29,10 @@ let g:ale_sign_warning = ' •'
 " Note: The highlighting for ALE signs is defined in the modified kuroi colorscheme
 """"""""""""""
 
+" Configure ]h to jump to next hunk/change and [h to jump to previous
+nnoremap <silent> ]h :GitGutterNextHunk<cr>
+nnoremap <silent> [h :GitGutterPrevHunk<cr>
+
 """""""""""""""""""
 " Fzf Configuration
 " This is the default extra key bindings
