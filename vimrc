@@ -29,6 +29,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'thinca/vim-localrc'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
 " Make word-boundary motion aware of camelCase and snake_case
 Plugin 'chaoren/vim-wordmotion'
 " Add relative jumps to jump-list so that one can jump back with Ctrl+O
