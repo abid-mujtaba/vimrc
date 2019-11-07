@@ -65,6 +65,14 @@ nnoremap <silent> [h :GitGutterPrevHunk<cr>
 "   \ 'header':  ['fg', 'Comment'] }
 """""""""""""""""""
 
+"""""""""""""""""""""""""""
+" vim-mergetool config
+"
+let g:mergetool_layout = 'mr'
+let g:mergetool_prefer_revision = 'local'
+"
+"""""""""""""""""""""""""""
+
 
 " " plasticboy/vim-markdown
 " let g:vim_markdown_math = 1

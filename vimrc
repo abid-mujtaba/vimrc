@@ -40,7 +40,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'haya14busa/is.vim'
 
 " git mergetool plugin (better than vimdiff)
-Plugin 'whiteinge/diffconflicts'
+Plugin 'samoshkin/vim-mergetool'
 
 " Generic Programming Support
 " Plugin 'Townk/vim-autoclose'
