@@ -42,6 +42,8 @@ Plugin 'w0rp/ale'
 
 " Specific Programming Support
 Plugin 'vim-scripts/python.vim'
+Plugin 'jeetsukumaran/vim-pythonsense'
+Plugin 'git@bbgithub.dev.bloomberg.com:plewis110/csc2.vim.git'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
