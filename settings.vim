@@ -43,6 +43,7 @@ set showcmd		" Show various keys being pressed when issuing commands in command 
 set scrolloff=2			" Keep 2 lines above or below your current position (if possible) to maintain context while scrolling. (Scroll Offset)
 set wildmode=longest,list		" Standard tab completion behaviour for filenames inside vim
 set pastetoggle=<F2>		" Use <F2> to toggle paste mode on and off
+set t_u7=			" Fixes bug where vim launches in Replace mode
 "
 " Enable vim-folding i.e. cold folding.
 "
