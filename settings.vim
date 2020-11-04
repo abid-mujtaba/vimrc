@@ -93,6 +93,13 @@ au BufNewFile,BufRead Jenkinsfile
 	\ set tabstop=4 |
 	\ set expandtab
 
+" Configure tab = 2 spaces for yaml files
+au BufNewFile,BufRead *.yml,*.yaml
+	\ set tabstop=2 |
+	\ set softtabstop=2 |
+	\ set shiftwidth=2 |
+	\ set expandtab
+
 " Flag unnecessary whitespace
 " highlight BadWhitespace ctermbg=red guibg=darkred
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
