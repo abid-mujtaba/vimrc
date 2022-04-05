@@ -71,7 +71,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'abid-mujtaba/kuroi.vim'
 
 " Others
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 " nerdcommenter
 " tlib_vim
